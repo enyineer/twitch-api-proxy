@@ -48,7 +48,7 @@ Have a look at the [Twitch API Reference](https://dev.twitch.tv/docs/api/referen
 
 If the Endpoint is for example `PATCH https://api.twitch.tv/helix/channels`, send a PATCH Request to `http://localhost:6776/helix/channels` and the necessary Headers for Authorization will be added to your Request automatically.
 
-Do not add any extra headers (eg. `Authorization` or `Client-Id`).
+Do not add any extra headers (eg. `Authorization` or `Client-Id`). All headers sent with your request will be removed. All Methods other than `GET` will automatically get the `Content-Type: application/json` header.
 
 ## Reset twitch-api
 

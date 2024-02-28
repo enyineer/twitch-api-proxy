@@ -23,12 +23,16 @@ export const withAuthGate = async (request: Request) => {
   url.hostname = "api.twitch.tv";
   url.port = "443";
   
+  const body = request.body;
+  const method = request.method;
+
   const headers = new Headers();
   headers.set('Client-Id', clientId);
   headers.set('Authorization', `Bearer ${accessToken}`);
 
-  const body = request.body;
-  const method = request.method;
+  if (method.toLowerCase() !== 'get') {
+    headers.set('Content-Type', 'application/json');
+  }
 
   const initialResponse = await fetch(url.toString(), {
     headers,
