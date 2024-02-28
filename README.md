@@ -58,7 +58,7 @@ If you have any other problems, please make sure to create an Issue including yo
 
 # Developers
 
-## Comitting
+## Committing
 
 Make sure to follow the [Conventional Commits Format](https://www.conventionalcommits.org/en/v1.0.0/) when committing.
 
