@@ -100,3 +100,5 @@ Create a new Git Tag and push it
 $ git tag vX.X.X
 $ git push origin vX.X.X
 ```
+
+This will run the GitHub Action to create a new Release automatically.
