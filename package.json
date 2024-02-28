@@ -8,7 +8,9 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "start": "bun run src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile twitch-proxy"
   },
   "type": "module",
   "dependencies": {
