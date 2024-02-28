@@ -58,6 +58,10 @@ If you have any other problems, please make sure to create an Issue including yo
 
 # Developers
 
+## Comitting
+
+Make sure to follow the [Conventional Commits Format](https://www.conventionalcommits.org/en/v1.0.0/) when committing.
+
 ## Install
 
 Make sure you have [bun](https://bun.sh) installed on your machine.
