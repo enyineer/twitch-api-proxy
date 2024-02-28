@@ -38,7 +38,7 @@ $ ./twitch-api-proxy
 
 This will ask for your client-id and client-secret from your Twitch API Application and for your username.
 
-After that, your Browser will open and forward you to Twitch's OAuth page. All Scopes are selected so you can call every API via this Proxy. This is secure because the Authorization Tokens that are being generated are only kept in your local twitch-api config.
+After that, your Browser will open and forward you to Twitch's OAuth page. All Scopes are selected so you can call every API via this Proxy. This is secure because the Authorization Tokens that are being generated are only kept in your local twitch-api-proxy config.
 
 If twitch Proxy shows `Logged in successfully!` everything is set up correctly!
 
@@ -50,9 +50,9 @@ If the Endpoint is for example `PATCH https://api.twitch.tv/helix/channels`, sen
 
 Do not add any extra headers (eg. `Authorization` or `Client-Id`). All headers sent with your request will be removed. All Methods other than `GET` will automatically get the `Content-Type: application/json` header.
 
-## Reset twitch-api
+## Reset twitch-api-proxy
 
-If you need to reset your config for twitch-api for any reason, go to your Users Home Directory and then `.config/twitch-api/`. There is a config.json file - if you delete it an then re-run twitch-api, it will ask for your Credentials like on first run.
+If you need to reset your config for twitch-api-proxy for any reason, go to your Users Home Directory and then `.config/twitch-api-proxy/`. There is a `config.json` file - if you delete it an then re-run twitch-api-proxy, it will ask for your Credentials like on first run.
 
 If you have any other problems, please make sure to create an Issue including your `twitch-api-proxy.log` file.
 
