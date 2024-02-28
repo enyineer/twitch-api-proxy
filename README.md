@@ -2,11 +2,11 @@
 
 A simple API Reverse Proxy for the Twitch Helix API.
 
-It helps by handling the OAuth flow necessary to access the Twitch API. You can then call `http://localhost:6776/helix/<endpoint>` and access token renewal will be handled by this Proxy.
+It helps by handling the OAuth flow necessary to access the Twitch API. You can then call `http://localhost:6776/helix/<endpoint>` and access token renewal and necessary Headers for the Requests will be handled by this Proxy.
 
-You can then send Requests to this Proxy, for example from your Elgato Stream Deck to call API functionality.
+I'm using this Proxy for example to create Twitch Polls from my Elgato Stream Deck by using the [Web Requests Plugin](https://apps.elgato.com/plugins/gg.datagram.web-requests) for my Stream Deck because there is no plugin to do that:
 
-I'm using this Proxy for example to create Polls from my Elgato Stream Deck by using the [Web Requests Plugin](https://apps.elgato.com/plugins/gg.datagram.web-requests) for my Stream Deck.
+![Stream Deck HTTP Request Example](images/streamdeck-http-request.png)
 
 # Features
 
