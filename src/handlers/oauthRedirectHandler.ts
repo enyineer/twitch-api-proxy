@@ -1,5 +1,5 @@
 import { port, redirectUri } from '..';
-import type { AuthorizationResponse } from '../authGate';
+import type { AuthorizationResponse } from './authGate';
 import { Config } from '../config';
 import { logger } from '../logger';
 import type { UserData } from '../userdata';

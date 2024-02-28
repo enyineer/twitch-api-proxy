@@ -1,5 +1,5 @@
-import { Config } from './config';
-import { logger } from './logger';
+import { Config } from '../config';
+import { logger } from '../logger';
 
 export interface AuthorizationResponse {
   access_token: string;
