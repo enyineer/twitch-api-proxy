@@ -62,7 +62,7 @@ If you have any other problems, please make sure to create an Issue including yo
 
 Make sure to follow the [Conventional Commits Format](https://www.conventionalcommits.org/en/v1.0.0/) when committing.
 
-This Workspaces recommends installing [Conventional Commits Add-On for VS-Code](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits). After installation use CMD+Shift+P / Ctrl+Shift+P and run `Conventional Commits`. Normal commits will not be accepted.
+This Workspaces recommends installing [Conventional Commits Add-On for VS-Code](https://marketplace.visualstudio.com/items?itemName=vivaxy.vscode-conventional-commits). After installation use CMD+Shift+P / Ctrl+Shift+P and run `Conventional Commits`. Normal commits will not be accepted and Releasing will fail if no Conventional Commit was used.
 
 ## Install
 
