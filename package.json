@@ -1,0 +1,19 @@
+{
+  "name": "twitch-proxy",
+  "module": "src/index.ts",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "@inquirer/prompts": "^4.1.0",
+    "open": "^10.0.4",
+    "winston": "^3.11.0"
+  }
+}
