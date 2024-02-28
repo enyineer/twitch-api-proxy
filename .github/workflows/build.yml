@@ -3,13 +3,12 @@ name: build
 on:
   push:
 
-permissions:
-  contents: write
-
 jobs:
-  my-job:
-    name: my-job
+  build:
+    name: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       # ...
       - name: Checkout
