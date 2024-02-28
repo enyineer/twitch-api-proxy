@@ -4,6 +4,10 @@ A simple API Proxy for the Twitch Helix API.
 
 It helps by handling the OAuth flow necessary to access the Twitch API. You can then call `http://localhost:6776/helix/<endpoint>` and access token renewal will be handled by this Proxy.
 
+You can then send Requests to this Proxy, for example from your Elgato Stream Deck to call API functionality.
+
+I'm using this Proxy for example to create Polls from my Elgato Stream Deck by using the [Weg Requests Plugin](https://apps.elgato.com/plugins/gg.datagram.web-requests) for my Stream Deck.
+
 # Features
 
 - Brings a webserver that handles the [Authorization code grant flow](https://dev.twitch.tv/docs/authentication/getting-tokens-oauth/#authorization-code-grant-flow) with Twitch
@@ -36,9 +40,21 @@ This will ask for your client-id and client-secret from your Twitch API Applicat
 
 After that, your Browser will open and forward you to Twitch's OAuth page. All Scopes are selected so you can call every API via this Proxy. This is secure because the Authorization Tokens that are being generated are only kept in your local twitch-api config.
 
-### Reset twitch-api
+If twitch Proxy shows `Logged in successfully!` everything is set up correctly!
+
+## Send a Request
+
+Have a look at the [Twitch API Reference](https://dev.twitch.tv/docs/api/reference/) for Endpoints you can use.
+
+If the Endpoint is for example `PATCH https://api.twitch.tv/helix/channels`, send a PATCH Request to `http://localhost:6776/helix/channels` and the necessary Headers for Authorization will be added to your Request automatically.
+
+Do not add any extra headers (eg. `Authorization` or `Client-Id`).
+
+## Reset twitch-api
 
 If you need to reset your config for twitch-api for any reason, go to your Users Home Directory and then `.config/twitch-api/`. There is a config.json file - if you delete it an then re-run twitch-api, it will ask for your Credentials like on first run.
+
+If you have any other problems, please make sure to create an Issue including your `twitch-proxy.log` file.
 
 # Developers
 
