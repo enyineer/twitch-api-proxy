@@ -91,3 +91,12 @@ To run the Proxy with hot reload in development:
 ```bash
 $ bun run dev
 ```
+
+## Release
+
+Create a new Git Tag and push it
+
+```bash
+$ git tag vX.X.X
+$ git push origin vX.X.X
+```
