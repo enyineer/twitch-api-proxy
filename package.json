@@ -1,5 +1,5 @@
 {
-  "name": "twitch-proxy",
+  "name": "twitch-api-proxy",
   "module": "src/index.ts",
   "devDependencies": {
     "@types/bun": "latest"
@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "start": "bun run src/index.ts",
-    "build": "bun build src/index.ts --compile --outfile twitch-proxy"
+    "build": "bun build src/index.ts --compile --outfile twitch-api-proxy"
   },
   "type": "module",
   "dependencies": {

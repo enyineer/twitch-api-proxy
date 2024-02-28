@@ -31,9 +31,9 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: twitch-proxy
+          files: twitch-api-proxy
           body: |
-            Download twitch-proxy Binary to run this version.
+            Download twitch-api-proxy Binary to run this version.
 
             # Changelog
             

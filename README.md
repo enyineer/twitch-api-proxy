@@ -1,4 +1,4 @@
-# twitch-proxy
+# twitch-api-proxy
 
 A simple API Proxy for the Twitch Helix API.
 
@@ -33,7 +33,7 @@ You will then get a client-id and a client-secret after clicking on `New Secret`
 Run
 
 ```bash
-$ ./twitch-proxy
+$ ./twitch-api-proxy
 ```
 
 This will ask for your client-id and client-secret from your Twitch API Application and for your username.
@@ -54,7 +54,7 @@ Do not add any extra headers (eg. `Authorization` or `Client-Id`).
 
 If you need to reset your config for twitch-api for any reason, go to your Users Home Directory and then `.config/twitch-api/`. There is a config.json file - if you delete it an then re-run twitch-api, it will ask for your Credentials like on first run.
 
-If you have any other problems, please make sure to create an Issue including your `twitch-proxy.log` file.
+If you have any other problems, please make sure to create an Issue including your `twitch-api-proxy.log` file.
 
 # Developers
 

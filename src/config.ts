@@ -11,7 +11,7 @@ export class Config {
   private path: string;
 
   constructor() {
-    const folder = `${homedir()}/.config/twitch-proxy`;
+    const folder = `${homedir()}/.config/twitch-api-proxy`;
     mkdirSync(folder, { recursive: true });
     this.path = `${folder}/config.json`;
   }
