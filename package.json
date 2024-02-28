@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "bun run --hot src/index.ts",
     "start": "bun run src/index.ts",
-    "build": "bun build src/index.ts --compile --outfile twitch-api-proxy"
+    "build": "bun build --compile --minify --sourcemap --outfile twitch-api-proxy src/index.ts"
   },
   "type": "module",
   "dependencies": {
